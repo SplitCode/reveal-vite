@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/splitCode.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="start-section">
+          <div class="start-section__text">
+            <h2 class="section__subtitle">CSS</h2>
+            <h1 clas="section__title">GRID LAYOUT</h1>
+          </div>
+          <img
+            src="./dist/grid.png"
+            alt="Grid"
+            style="
+              height: 180px;
+              margin: 0 auto 4rem auto;
+              background: transparent;
+            "
+            class="demo-logo"
+          />
+          <p>
+            <small
+              >made by
+              <a href="https://github.com/SplitCode">SplitCode</a></small
+            >
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">FLEX</h2>
+            <h1 class="section__title">VS GRID</h1>
+          </div>
+          <p class="left">Flexbox is a one—dimensional system</p>
+          <p class="left">CSS Grid is a two—dimensional layout system</p>
+          <img
+            class="flexgrid"
+            src="./dist/Flex-grid.png"
+            alt="Flex vs grid"
+            style="
+              height: 250px;
+              margin: 3rem auto 4rem auto;
+              background: transparent;
+            "
+            class="demo-logo"
+          />
+        </section>
+
+        <section class="section">
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">CAN I USE</h2>
+              <h1 class="section__title">CSS GREED</h1>
+            </div>
+            <div class="container">
+              <ul>
+                <li>
+                  <span class="white">Google Chrome - </span
+                  ><span class="blue small-text">v 57</span>
+                </li>
+                <li>
+                  <span class="white">Edge – </span
+                  ><span class="blue small-text">v 16</span>
+                </li>
+                <li>
+                  <span class="white">Safari - </span
+                  ><span class="blue small-text">v 10.1</span>
+                </li>
+                <li>
+                  <span class="white">Mozilla Firefox - </span
+                  ><span class="blue small-text">v 52</span>
+                </li>
+                <li>
+                  <span class="white">Opera - </span
+                  ><span class="blue small-text">v 44</span>
+                </li>
+              </ul>
+              <img
+                class="flexgrid"
+                src="./dist/cut.png"
+                alt="Can i Use"
+                style="
+                  height: 450px;
+                  margin: auto 4rem auto;
+                  background: transparent;
+                "
+                class="demo-logo"
+              />
+            </div>
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">@SUPPORT</h2>
+              <h1 class="section__title">CSS at-rule</h1>
+            </div>
+            <p class="left">
+              Lets you specify CSS declarations that depend on a browser's
+              support for CSS features
+            </p>
+            <pre class="left code-text">
+@supports (display: grid) {
+        div {
+	    display: grid;
+	}
+  }</pre
+            >
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">WHAT IS</h2>
+              <h1 class="section__title">CSS GRID</h1>
+            </div>
+            <p class="left small">
+              <span class="blue">Grid Layout</span> is a special CSS3 module
+              that allows you to position elements in the form of a grid or
+              table.
+            </p>
+            <p class="left small">
+              Basically, a grid could be broken down to two elements:
+              <span class="blue">the grid container and the grid-items.</span>
+            </p>
+            <img
+              class="flexgrid"
+              src="./dist/grid-container.png"
+              alt="Grid layout"
+              style="
+                height: 300px;
+                width: 400px;
+                margin: auto auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">BASIC</h2>
+              <h1 class="section__title">GRID LAYOUT</h1>
+            </div>
+            <img
+              class="flexgrid"
+              src="./dist/layout.png"
+              alt="Grid layout"
+              style="
+                height: 500px;
+                width: 600px;
+                margin: auto auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">GRID</h2>
+              <h1 class="section__title">LINE</h1>
+            </div>
+            <p class="left small">
+              <span class="blue">Grid line: </span>the dividing line forming the
+              grid structure. It can be either vertical (grid line of a column)
+              or horizontal (grid line of a row).
+            </p>
+            <img
+              class="flexgrid"
+              src="./dist/line.png"
+              alt="Grid Line"
+              style="
+                height: 250px;
+                width: 500px;
+                margin: 1rem 2rem 2rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">GRID</h2>
+              <h1 class="section__title">TRACK</h1>
+            </div>
+            <p class="left small">
+              <span class="blue">Grid track: </span>the space between 2 adjacent
+              grid lines. Essentially your columns and rows.
+            </p>
+            <img
+              class="flexgrid"
+              src="./dist/track.png"
+              alt="Grid Track"
+              style="
+                height: 250px;
+                width: 500px;
+                margin: 1rem 2rem 2rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">GRID</h2>
+              <h1 class="section__title">CELL</h1>
+            </div>
+            <p class="left small">
+              <span class="blue">Grid cell: </span>the space between 2 adjacent
+              grid column lines and 2 adjacent grid row lines
+            </p>
+            <img
+              class="flexgrid"
+              src="./dist/cell.png"
+              alt="Grid Cell"
+              style="
+                height: 250px;
+                width: 500px;
+                margin: 1rem 2rem 2rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">GRID</h2>
+              <h1 class="section__title">AREA</h1>
+            </div>
+            <p class="left small">
+              <span class="blue">Grid area: </span>the space between any 4 grid
+              lines. It can cover any number of rows and columns.
+            </p>
+            <img
+              class="flexgrid"
+              src="./dist/area.png"
+              alt="Grid Arena"
+              style="
+                height: 250px;
+                width: 500px;
+                margin: 1rem 2rem 2rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+        </section>
+
+        <section class="section">
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">GRID</h2>
+              <h1 class="section__title">CONTAINER PROPS</h1>
+            </div>
+            <p class="left">
+              To create a <span class="blue">grid container</span>, assign one
+              of two values to its display style property:
+              <span class="blue">grid or inline-grid.</span>
+            </p>
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">DISPLAY</h2>
+              <h1 class="section__title">GRID</h1>
+            </div>
+            <p class="left">
+              The grid value defines the container as a block element
+            </p>
+            <div class="container">
+              <pre class="left code-text">
+.grid-container {
+      display: grid;
+  }</pre
+              >
+              <img
+                class="flexgrid"
+                src="./dist/displaygrid.png"
+                alt="Grid layout"
+                style="
+                  height: 300px;
+                  width: 300px;
+                  margin: 0 auto;
+                  background: transparent;
+                "
+                class="demo-logo"
+              />
+            </div>
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">DISPLAY</h2>
+              <h1 class="section__title">INLINE-GRID</h1>
+            </div>
+            <p class="left">
+              The inline-grid value defines the element as inline
+            </p>
+            <div class="container">
+              <pre class="left code-text">
+.grid-container {
+      display: inline-grid;
+  }</pre
+              >
+              <img
+                class="flexgrid"
+                src="./dist/displayinline.png"
+                alt="Grid layout"
+                style="
+                  height: 400px;
+                  width: 300px;
+                  margin: 0 auto;
+                  background: transparent;
+                "
+                class="demo-logo"
+              />
+            </div>
+          </section>
+        </section>
+
+        <section class="section">
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">ROWS &</h2>
+            <h1 class="section__title">COLUMNS</h1>
+          </div>
+          <p class="left">
+            Defines the <span class="blue">columns and rows</span> of the grid
+            with a space separated list of value.
+          </p>
+          <pre class="left code-text">
+.grid-container {
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr auto 2fr;
+}</pre
+          >
+          <p>or</p>
+          <pre class="left code-text">
+.grid-container {
+  grid-template:  1fr auto 2fr  / 1fr 1fr 1fr 1fr;
+}</pre
+          >
+        </section>
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">GRID</h2>
+            <h1 class="section__title">TEMPLATE COLUMNS</h1>
+          </div>
+          <p class="left">
+            Use the <span class="blue">grid-template-columns</span> style property to define columns.
+          </p>
+          <div class="container">
+          <pre class="left code-text">
+            .grid-container {
+                display: grid;
+                grid-template-columns: 8em 8em;
+            }</pre
+                      >
+          <img
+          class="flexgrid"
+          src="./dist/template-columns.png"
+          alt="Grid layout"
+          style="
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            background: transparent;
+          "
+          class="demo-logo"
+        />
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">GRID</h2>
+            <h1 class="section__title">TEMPLATE ROWS</h1>
+          </div>
+          <p class="left">
+            Use the <span class="blue">grid-template-rows</span> style property to define rows.
+          </p>
+          <div class="container">
+          <pre class="left code-text">
+            .grid-container {
+                display: grid;
+                grid-template-rows: 4em 5em;
+            }</pre
+                      >
+          <img
+          class="flexgrid"
+          src="./dist/template-rows.png"
+          alt="Grid layout"
+          style="
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            background: transparent;
+          "
+          class="demo-logo"
+        />
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">GRID</h2>
+            <h1 class="section__title">TEMPLATE ROWS</h1>
+          </div>
+          <p class="left">
+            Use the <span class="blue">grid-template-rows</span> style property to define rows.
+          </p>
+          <div class="container">
+          <pre class="left code-text">
+            .grid-container {
+                display: grid;
+                grid-template-rows: 4em 5em;
+            }</pre
+                      >
+          <img
+          class="flexgrid"
+          src="./dist/template-rows.png"
+          alt="Grid layout"
+          style="
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            background: transparent;
+          "
+          class="demo-logo"
+        />
+          </div>
+        </section>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">NAMED</h2>
+            <h1 class="section__title">LINES</h1>
+          </div>
+          <p class="left">The ability to explicitly name grid lines using square brackets</p>
+          <pre class="left code-text">.grid-container {
+  grid-template-rows: [start] 250px [line2] 400px [line3] 600px [end];
+  grid-template-columns: 1fr 1fr [content-start navbar-end] repeat(10, 1fr);
+}</pre>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">FRACTIONAL</h2>
+            <h1 class="section__title"> (FR) UNITS</h1>
+          </div>
+          <p class="left"><span class="blue">fr </span>(from fraction) is responsible for the free space inside the grid container.</p>
+          <pre class="left code-text">.grid-container {
+    grid-template:  1fr auto 2fr  / <span class="blue">1fr 1fr 1fr 1fr</span>;
+}</pre>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">REPEAT()</h2>
+            <h1 class="section__title">FUNCTION</h1>
+          </div>
+          <p class="left small">Allows to easily repeat settings.</p>
+          <pre class="left code-text">.grid-container {
+    grid-template:  1fr auto 2fr  / <span class="blue">1fr 1fr 1fr 1fr</span>;
+}</pre>
+          <p>=</p>
+          <pre class="left code-text">.grid-container {
+	grid-template:  1fr auto 2fr / <span class="blue">repeat(4, 1fr)</span>;
+}</pre>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">MINMAX</h2>
+            <h1 class="section__title">FUNCTION</h1>
+          </div>
+          <p class="left">
+            Defines a size range greater than or equal to min and less than or
+            equal to max.
+          </p>
+          <pre class="left code-text">.grid-container {
+    grid-template-columns:  <span class="blue">repeat(3, minmax(100px, 1fr))</span>;
+}</pre>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">GRID</h2>
+            <h1 class="section__title">GAPS</h1>
+          </div>
+          <p class="left">
+            Defines the space between grid tracks.
+          </p>
+          <pre class="left code-text">.grid-container {
+    row-gap: 5px;
+    column-gap: 10px;
+}</pre>
+<p>or</p>
+<pre class="left code-text">.grid-container {
+    gap: 5px, 10px;
+}</pre>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">JUSTIFY ITEMS /</h2>
+            <h1 class="section__title">ALIGN ITEMS</h1>
+          </div>
+          <p class="left">
+            Justify-items aligns a grid-items on the row axis, align-items aligns items on the column axis, inside grid cells.
+          </p>
+          <pre class="left code-text">justify-items: start;
+justify-items: center;
+align-items: end;
+align-items: stretch;</pre>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">JUSTIFY CONTENT /</h2>
+            <h1 class="section__title">ALIGN CONTENT</h1>
+          </div>
+          <p class="left">
+            Justify-content align the grid on the row axis, and align-content align the grid on the column axis.
+          </p>
+          <pre class="left code-text">justify-content: start;
+justify-content: center;
+align-content: space-around;
+align-content:space-evenly;</pre>
+        </section>
+
+<section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">GRID</h2>
+            <h1 class="section__title">ITEM PROPS</h1>
+          </div>
+          <p class="left">
+            The items that are direct children of the grid container. These are
+            the elements that will be placed on the grid.
+          </p>
+          <pre class="left code-text"><code><body>
+				<div class="grid-container">
+					<div class="grid-item color1">Grid Item 1</div>
+					<div class="grid-item color2">Grid Item 2</div>
+					<div class="grid-item color3">Grid Item 3</div>
+					<div class="grid-item color4">Grid Item 4</div>
+					<div class="grid-item color1">Grid Item 5</div>
+				</div>
+			</body></code>
+		</pre>
+        </section>
+
+        <section class="section">
+          <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">GRID</h2>
+            <h1 class="section__title">ROW START/END</h1>
+          </div>
+          <p class="left">
+            Determines a grid item's location within the grid by referring to specific grid lines.
+          </p>
+          <pre class="left code-text">.grid-container {
+    grid-row-start: 1;
+    grid-row-end: span col4-start;
+}</pre>
+<p>or</p>
+<pre class="left code-text">.grid-container {
+  grid-row: 1 / 3;
+}</pre>
+</section>
+<section class="section">
+  <div class="section__text">
+    <h2 class="section__subtitle">GRID</h2>
+    <h1 class="section__title">COLUMN START/END</h1>
+  </div>
+  <p class="left">
+    Determines a grid item's location within the grid by referring to specific grid lines.
+  </p>
+  <pre class="left code-text">.grid-container {
+grid-row-start: 1;
+grid-row-end: span col4-start;
+}</pre>
+<p>or</p>
+<pre class="left code-text">.grid-container {
+grid-row: 1 / 3;
+}</pre>
+</section>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">JUSTIFY SELF /</h2>
+            <h1 class="section__title">ALIGN SELF</h1>
+          </div>
+          <p class="left">
+            Justify-self aligns a grid-item on the row axis, align-self aligns on the column axis.
+          </p>
+          <pre class="left code-text">justify-self: start;
+justify-self: center;
+align-self: end;
+align-self: stretch;</pre>
+        </section>
+
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">GRID</h2>
+            <h1 class="section__title">TEMPLATE AREA</h1>
+          </div>
+          <p class="left">
+            Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property.
+          </p>
+          <pre class="left code-text">.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header"
+    "content content 👾"
+    "content content ."
+    "footer footer footer";
+  }</pre>
+        </section>
+
+        <section class="section">
+          <section class="section">
+          <div class="section__text">
+            <h2 class="section__subtitle">KEY</h2>
+            <h1 class="section__title">POINTS</h1>
+          </div>
+          <ul>
+            <li>
+              <span class="white">Grid Layout in CSS is a flexible markup in which elements are arranged in a table. The table consists of cells that can be assembled into whole areas.</span>
+            </li>
+            <li>
+              <span class="white">To create a grid, we need to add the line display: grid or inline-grid in the CSS markup file.</span>
+            </li>
+            <li>
+              <span class="white">The grid consists of a parent container and its nested elements. Elements can occupy multiple cells that are stacked into columns, columns, or areas.</span>
+            </li>
+          </ul>
+          </section>
+          <section class="section">
+            <div class="section__text">
+              <h2 class="section__subtitle">KEY</h2>
+              <h1 class="section__title">POINTS</h1>
+            </div>
+            <ul>
+              <li>
+                <span class="white">Fraction is a unit of measurement in CSS, created for convenience — so that you can set the ratios between the elements and not manually adjust the percentages.</span>
+              </li>
+              <li>
+                <span class="white">The main properties of the grid container are: grid-template, grid-template-columns, grid-template-rows, grid-template-areas. They allow to set the sizes of columns, rows, or entire areas.</span>
+              </li>
+              <li>
+                <span class="white">The column-gap property is responsible for the indentation between the columns of the grid, and row—gap is responsible for the indentation between the rows.</span>
+              </li>
+            </ul>
+            </section>
+            <section class="section">
+              <div class="section__text">
+                <h2 class="section__subtitle">KEY</h2>
+                <h1 class="section__title">POINTS</h1>
+              </div>
+              <ul>
+                <li>
+                  <span class="white">We can align container elements horizontally using justify-items and justify-content, and vertically with align-items and align-content.</span>
+                </li>
+                <li>
+                  <span class="white">We can adjust the location of elements from a specific grid line using the properties: grid-column-start, grid-column-end, grid-column, grid-row-start, grid-row-end, grid-row or a common grid-area property.
+                    </span>
+                </li>
+                <li>
+                  <span class="white">We can align a specific grid element using justify-self (horizontally) and align-self (vertically).</span>
+                </li>
+              </ul>
+              </section>
+        </section>
+        <section class="start-section">
+          <div class="start-section__text">
+            <h2 class="section__subtitle">THANK YOU FOR</h2>
+            <h1 clas="section__title">ATTENTION</h1>
+          </div>
+          <p>
+            <small
+              >made by
+              <a href="https://github.com/SplitCode">SplitCode</a></small
+            >
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
